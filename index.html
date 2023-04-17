@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+	</head>
+	<body>
+		<center><h1>REGISTRATION</h1></center>
+		<form id="form1" method="get">
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname">
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="gen">Gender:</label>
+			<input type="radio" id="male" name="gen" value="male">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gen" value="female">
+			<label for="female">Female</label>
+			<input type="radio" id="others" name="gen" value="others">
+			<label for="others">Others</label><br><br>
+			<label for="dob">Date of birth:</label>
+			<input type="date" id="dob" name="dob"><br><br>
+			<label for="mnumber">Mobile Number:</label>
+			<input type="tel" id="mnumber" name="mnumber" placeholder="91-98765-43210" pattern="[1,9]{2}-[0-9]{5}-[0-9]{5}"><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="addr">Address</label><br>
+			<textarea id="addr" name="addr" rows="4" cols="50"></textarea>
+			<br><br>
+			<label for="aadhar">Aadhar:</label>
+			<input type="number" id="aadhar" name="aadhar" placeholder="8765-4321-88765-4321"><br><br> 
+			<label for="course">Course:</label>
+			<input list="courses" id="course" name="course" placeholder="Select">
+			<datalist id="courses">
+			<option value="B.E">
+			<option value="B.tech">
+			</datalist><br><br>
+			<label type="qua">Qualification:</label>
+			<input list="qual" name="qua" id="qua" autocomplete="off">
+			<datalist id="qual">
+			<option value="UG">UG</option>
+			<option value="PG">PG</option>
+			</datalist>
+			<label for="degr">Degree &amp; Dept</label>
+			<input type="text" id="degr" name="degr" placeholder="BE CSE"><br><br>
+			<label for="myfile">Upload Resume:</label>
+			<input type="file" id="myfile" name="myfile"><br><br>
+			<input type="checkbox" id="agree1" name="agree1">
+			<label for="agree1">I accept all terms and conditions.</label><br><br>
+			<input type="checkbox" id="agree2" name="agree2">
+			<label for="agree2">I hereby declare that all statements made in this application are true.</label><br><br>
+			<button type="submit" id="form1" value="Submit">Submit</button>
+			<button type="reset" id="form1" value="Reset">Reset</button>
+		</form>
+	</body>
+</html>
